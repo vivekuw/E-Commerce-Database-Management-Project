@@ -39,7 +39,7 @@
 ```
 ### Create Tables
 
- -Customer Table
+ ####Customer Table
  
  ```sql
     create table e_commerce.customer (
@@ -53,7 +53,7 @@
       age int null
    );
  ```
-  -Category Table
+  ####Category Table
   
   ```sql
     create table e_commerce.category (
@@ -62,7 +62,7 @@
       Description varchar(255)
   );
 ```
-  -Seller Table
+  ####Seller Table
   
   ```sql
     create table e_commerce.seller (
@@ -72,7 +72,7 @@
       total_sales float
   );
 ```
-  -Address Table
+  ####Address Table
   
   ```sql
     create table e_commerce.address(
@@ -87,7 +87,7 @@
       FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
   );
 ```
-  -Product Table
+  ####Product Table
   
   ```sql
     create table e_commerce.product (
@@ -115,7 +115,7 @@
       FOREIGN KEY (product_id) REFERENCES product(product_id)
   );
 ```
-  -Review Table
+  ####Review Table
   
   ```sql
     create table e_commerce.review(
@@ -143,7 +143,7 @@
       FOREIGN KEY (cart_id) REFERENCES cart(cart_id)
   );
 ```
-  -OrderItem Table
+  ####OrderItem Table
 
 ```sql
     create table e_commerce.orderitem(
@@ -156,7 +156,7 @@
   );
 ```
 
-  -Payment Table
+  ####Payment Table
 
   ```sql
     create table e_commerce.payment(
