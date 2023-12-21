@@ -4,12 +4,19 @@
   
 # Contents
   •	Project Description
+  
   •	Basic structure
+  
     o	Functional requirements
+    
     o	Entity Relation (ER) diagram and constraints
+    
     o	Relational database schema
+    
   •	Implementation
+  
     o	Creating tables
+    
     o	Inserting data
     
 # Pre-requisite
