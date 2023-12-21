@@ -33,4 +33,22 @@
 
 ![alt text](https://github.com/vivekuw/E-Commerce-Database-management-project/blob/a83d9c48c82ffd18dee02c13f42e87b7069faf67/ECommerce.jpg)
 
+# Create schema(database) in MySQL
+```sql
+  create schema e_commerce;
+```
+# Create Tables
 
+ customer tables 
+ ```sql
+    create table e_commerce.customer (
+      customer_id int primary key,
+      FirstName varchar(50),
+      MiddleName varchar(50),
+      LastName varchar(50),
+      Email varchar(100),
+      DateOfBirth date,
+      phone INT,
+      age int null
+   );
+ ```
