@@ -143,7 +143,7 @@
       FOREIGN KEY (cart_id) REFERENCES cart(cart_id)
   );
 ```
-  - OrderItem Table
+  -OrderItem Table
 
 ```sql
     create table e_commerce.orderitem(
