@@ -49,9 +49,10 @@
       LastName varchar(50),
       Email varchar(100),
       DateOfBirth date,
-      phone INT,
+      phone INT(10),
       age int null
-   );
+    );
+
  ```
   Category Table
   
