@@ -85,7 +85,7 @@
       city varchar(255),
       pincode int(6),
       customer_id int ,
-      FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
+      FOREIGN KEY (customer_id) REFERENCES customer(customer_id) on delete cascade on update no action
   );
 ```
   Product Table
@@ -99,8 +99,8 @@
       brand varchar(255),
       customer_id int,
       seller_id int,
-      FOREIGN KEY (customer_id) REFERENCES customer(customer_id),
-      FOREIGN KEY (seller_id) REFERENCES seller(seller_id)
+      FOREIGN KEY (customer_id) REFERENCES customer(customer_id) on delete set null on update no action,
+      FOREIGN KEY (seller_id) REFERENCES seller(seller_id) on delete set null on update no action
   );
 ```
   Cart Table
@@ -111,9 +111,9 @@
       grandtoatl float ,
       itemtotal int,
       customer_id int,
-      FOREIGN KEY (customer_id) REFERENCES customer(customer_id),
+      FOREIGN KEY (customer_id) REFERENCES customer(customer_id) on delete set null on update no action,
       product_id int,
-      FOREIGN KEY (product_id) REFERENCES product(product_id)
+      FOREIGN KEY (product_id) REFERENCES product(product_id) on delete set null on update no action
   );
 ```
   Review Table
@@ -124,10 +124,10 @@
       description varchar(255),
       rating enum('1','2','3','4','5'),
       customer_id int,
-      FOREIGN KEY (customer_id) REFERENCES customer(customer_id),
+      FOREIGN KEY (customer_id) REFERENCES customer(customer_id) on delete set null on update no action,
       product_id int,
-      FOREIGN KEY (product_id) REFERENCES product(product_id)
-  );
+      FOREIGN KEY (product_id) REFERENCES product(product_id) on delete set null on update no action
+);
 ```
   Order Table
   
@@ -139,9 +139,9 @@
       order_status enum('delivery','not delivery'),
       shipping_date datetime,
       customer_id int,
-      FOREIGN KEY (customer_id) REFERENCES customer(customer_id),
+      FOREIGN KEY (customer_id) REFERENCES customer(customer_id) on delete set null on update no action,
       cart_id int,
-      FOREIGN KEY (cart_id) REFERENCES cart(cart_id)
+      FOREIGN KEY (cart_id) REFERENCES cart(cart_id) on delete set null on update no action
   );
 ```
   OrderItem Table
@@ -150,8 +150,8 @@
     create table e_commerce.orderitem(
       order_id int,
       product_id int,
-      foreign key (order_id) references order_table(order_id),
-      foreign key (product_id) references product(product_id),
+      foreign key (order_id) references order_table(order_id) on delete set null on update no action,
+      foreign key (product_id) references product(product_id) on delete set null on update no action,
       MRP float,
       quantity int
   );
@@ -164,9 +164,9 @@
       paymentMode enum('online','offline'),
       dateofpayment datetime,
       order_id int,
-      foreign key (order_id) references order_table(order_id),
+      foreign key (order_id) references order_table(order_id) on delete set null on update no action,
       customer_id int,
-      FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
+      FOREIGN KEY (customer_id) REFERENCES customer(customer_id) on delete set null on update no action
   );	
 ```
 
