@@ -144,6 +144,7 @@
       FOREIGN KEY (cart_id) REFERENCES cart(cart_id) on delete set null on update no action
   );
 ```
+
   OrderItem Table
 
 ```sql
@@ -169,5 +170,43 @@
       FOREIGN KEY (customer_id) REFERENCES customer(customer_id) on delete set null on update no action
   );	
 ```
+
+### Insert the data
+
+  Customer Table
+  ```sql
+      insert into e_commerce.customer values (1,'vivek','umesh','wadher','wadhervivek6904@gmail.com','2004-09-06',2147483647,0);
+      insert into e_commerce.customer values (2,'devansh','hitesh','makawana','devansh@gmail.com','2004-05-23',2147483647,0);
+      insert into e_commerce.customer values (3,'jay','amit','chauhan','jay@gmail.com','2004-05-02',2147483647,0);
+```
+
+  Category Table
+  
+  ```sql
+    insert into e_commerce.category values (1,'Mobiles & Computer','all the brands are there like phone, tablets, PC, Desktop '); 
+    insert into e_commerce.category values (2,'TV & Aplliances & Electronics','all the brands are there like tv smart, tv oled, mixer and many more'); 
+    insert into e_commerce.category values (3,'Men`s Fashion','all the brands are there like t-Shirts, jeans, shirts,etc'); 
+    insert into e_commerce.category values (4,'Women`s Fashion','all the brands are there like shorts,one pic, kurti, t-shirt,jeans,etc');
+```
+
+  Seller Table
+  
+  ```sql
+  insert into e_commerce.seller values (1,'prem upadhay','1295874636',12000.75);  
+  insert into e_commerce.seller values (2,'jay chauhan','7865423565',38000.20);  
+  insert into e_commerce.seller values (3, 'yash shetty','7465456456',8529.23);
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
