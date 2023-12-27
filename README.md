@@ -97,9 +97,9 @@
       MRP float,
       stock bool,
       brand varchar(255),
-      customer_id int,
+      category_id int,
       seller_id int,
-      FOREIGN KEY (customer_id) REFERENCES customer(customer_id) on delete set null on update no action,
+      FOREIGN KEY (category_id) REFERENCES category(category_id) on delete set null on update no action,
       FOREIGN KEY (seller_id) REFERENCES seller(seller_id) on delete set null on update no action
   );
 ```
