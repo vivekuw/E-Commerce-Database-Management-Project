@@ -1,0 +1,10 @@
+insert into e_commerce.product values(1,'pen drive',250,52,'hp',2,1);
+insert into e_commerce.product values(2,'monitor',25000,30,'dell',1,3);
+insert into e_commerce.product values(3,'keyborad',765,69,'lenovo',2,2);
+insert into e_commerce.product values(4,'i phone 15',75000,10,'Apple',1,2);
+insert into e_commerce.product values(5,'Mens t-shirts',350,22,'H&M',3,1);
+insert into e_commerce.product values(6,'mens kurta',766,32,'ZARA',3,3);
+insert into e_commerce.product values(7,'women shorts',360,52,'pantaloom',4,2);
+insert into e_commerce.product values(8,'women jeans',699,65,'zudio',4,1);
+insert into e_commerce.product values(9,'mouse',299,65,'lenovo',2,3);
+insert into e_commerce.product values(10,'destop',25000,10,'dell',1,2);
