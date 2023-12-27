@@ -197,16 +197,80 @@
   insert into e_commerce.seller values (3, 'yash shetty','7465456456',8529.23);
 ```
 
+  Address Table
 
+  ```sql
+insert into e_commerce.address values (1,'108','khodiayr chs ltd','devipada borivali east','maharsahtra','mumbai','400066',1);
+insert into e_commerce.address values (2,'214/B','vitthal chs','rattan nagar kandivali east','maharsahtra','mumbai','400801',2);
+insert into e_commerce.address values (3,'52','oberoi sky city','thakur complex malad east','maharsahtra','mumbai','400526',3);
+```
 
+  Product Table
+  
+```sql
+insert into e_commerce.product values(1,'pen drive',250,52,'hp',2,1);
+insert into e_commerce.product values(2,'monitor',25000,30,'dell',1,3);
+insert into e_commerce.product values(3,'keyborad',765,69,'lenovo',2,2);
+insert into e_commerce.product values(4,'i phone 15',75000,10,'Apple',1,2);
+insert into e_commerce.product values(5,'Mens t-shirts',350,22,'H&M',3,1);
+insert into e_commerce.product values(6,'mens kurta',766,32,'ZARA',3,3);
+insert into e_commerce.product values(7,'women shorts',360,52,'pantaloom',4,2);
+insert into e_commerce.product values(8,'women jeans',699,65,'zudio',4,1);
+insert into e_commerce.product values(9,'mouse',299,65,'lenovo',2,3);
+insert into e_commerce.product values(10,'destop',25000,10,'dell',1,2);
+```
 
+  Cart Table
 
+```sql
+insert into e_commerce.cart values (1,75000,1,1,4); 
+insert into e_commerce.cart values (2,1050,3,2,5); 
+insert into e_commerce.cart values (3,598,2,3,9); 
+insert into e_commerce.cart values (4,2160,6,2,7); 
+insert into e_commerce.cart values (5,250,1,1,1); 
+insert into e_commerce.cart values (6,3830,6,3,6); 
+```
 
+  Order Table
 
+```sql
+insert into e_commerce.order_table values (1,'2023-12-06 10:12:20',75000,'delivery','2023-12-09 09:25:02',1,1); 
+insert into e_commerce.order_table values (2,'2023-12-07 20:23:20',1050,'delivery','2023-12-12 05:29:02',2,2); 
+insert into e_commerce.order_table values (3,'2023-12-08 18:12:20',598,'delivery','2023-12-23 09:26:02',3,3); 
+insert into e_commerce.order_table values (4,'2023-12-10 15:45:20',2160,'delivery','2023-12-15 11:26:02',2,4); 
+insert into e_commerce.order_table values (5,'2023-12-10 15:45:20',250,'delivery','2023-12-15 11:26:02',1,5); 
+insert into e_commerce.order_table values (6,'2023-12-21 16:23:20',3830,'delivery','2023-12-29 11:35:09',3,6); ****
+```
 
+  Order Item Table
 
+```sql
+insert into e_commerce.orderitem values (7500,1,1,4);
+insert into e_commerce.orderitem values (1050,3,2,5);
+insert into e_commerce.orderitem values (299,2,3,9);
+insert into e_commerce.orderitem values (360,6,4,7);
+insert into e_commerce.orderitem values (250,1,5,1);
+insert into e_commerce.orderitem values (766,6,6,6);
+```
 
+  Payment Table
 
+```sql
+insert into e_commerce.payment values ('online','2023-12-06 10:12:56',1,1,1);
+insert into e_commerce.payment values ('online','2023-12-07 20:23:20',2,2,2);
+insert into e_commerce.payment values ('online','2023-12-08 18:12:20',3,3,3);
+insert into e_commerce.payment values ('online','2023-12-10 15:45:20',4,2,4);
+insert into e_commerce.payment values ('online','2023-12-10 15:45:20',5,1,5);
+insert into e_commerce.payment values ('online','2023-12-21 16:23:20',6,3,6);
+```
 
+Review Table
 
-
+```sql
+insert into e_commerce.review values (1,'i phone 15 is amazing.','5',1,4);
+insert into e_commerce.review values (2,'wow t-shirts ,good in quality.','3',2,5);
+insert into e_commerce.review values (3,'best mouse in the world.','4',3,9);
+insert into e_commerce.review values (4,'very comfatabale in size and quality.','4',2,7);
+insert into e_commerce.review values (5,'the size is 128mb pendrive, speed is good.','5',1,1);
+insert into e_commerce.review values (6,'size of kurta and quality is good','2',3,6);
+```
